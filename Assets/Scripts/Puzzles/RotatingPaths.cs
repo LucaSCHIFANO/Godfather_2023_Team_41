@@ -8,6 +8,7 @@ public class RotatingPaths : MonoBehaviour
 {
     [SerializeField] GameObject wheel1;
     [SerializeField] GameObject wheel2;
+    [SerializeField] float speed;
 
     public void MovementInput(InputAction.CallbackContext context)
     {
@@ -15,15 +16,13 @@ public class RotatingPaths : MonoBehaviour
           
         if (value < 0)
         {
-            wheel1.transform.Rotate(0, -value, 0);
-            wheel2.transform.Rotate(0, value, 0);
-            Debug.Log("minus");
+            wheel1.transform.Rotate(0, -value * speed, 0);
+            wheel2.transform.Rotate(0, value * speed, 0);
         }
         else if(value > 0)
         {
-            wheel1.transform.Rotate(0, -value, 0);
-            wheel2.transform.Rotate(0, value, 0);
-            Debug.Log("greater");
+            wheel1.transform.Rotate(0, -value * speed, 0);
+            wheel2.transform.Rotate(0, value * speed, 0);
         }
     }
 }
