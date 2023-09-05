@@ -265,6 +265,7 @@ MonoBehaviour:
   wheel1: {fileID: 58288715}
   wheel2: {fileID: 1516294066}
   speed: 1
+  randomStartPosition: {x: 0, y: 0}
 --- !u!114 &89483140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,7 +1232,7 @@ Transform:
   m_GameObject: {fileID: 1774240048}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.273736, y: -0.06559728, z: -0.66597545}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1254,6 +1255,8 @@ MonoBehaviour:
   crake1: {fileID: 423299955}
   crake2: {fileID: 244127145}
   speed: 0.1
+  randomStartPosition: {x: -4, y: 4}
+  limits: {x: -5, y: 5}
 --- !u!1 &1883653464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,7 +1698,7 @@ Transform:
   m_GameObject: {fileID: 2145522994}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.003167197, y: -0.9962832, z: -0.6770989}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -9,6 +9,14 @@ public class RotatingPaths : MonoBehaviour
     [SerializeField] GameObject wheel1;
     [SerializeField] GameObject wheel2;
     [SerializeField] float speed;
+    [SerializeField] Vector2 randomStartPosition;
+
+    private void Awake()
+    {
+        float value = Random.Range(randomStartPosition.x, randomStartPosition.y);
+        wheel1.transform.Rotate(0, -value * speed, 0);
+        wheel2.transform.Rotate(0, value * speed, 0);
+    }
 
     public void MovementInput(InputAction.CallbackContext context)
     {
