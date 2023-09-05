@@ -316,12 +316,24 @@ MonoBehaviour:
     m_ActionName: Main Inputs/Lever Right[/Keyboard/g,/Keyboard/t]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 438e7e70-8831-4c55-b9b3-84287f3a7b05
-    m_ActionName: Main Inputs/Button Arrow[/Keyboard/z,/Keyboard/s,/Keyboard/q,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: f7499b86-522c-465a-ae4a-c2d0082bfab3
     m_ActionName: Main Inputs/BlackWhiteButton[/Keyboard/q,/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 276530d5-8c45-46d8-9263-f1007589e6a0
+    m_ActionName: Main Inputs/UpArrowButton[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c8b63db2-6107-44f6-a511-2b0240d7282f
+    m_ActionName: Main Inputs/DownArrowButton[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dba2dd14-efce-4ca7-a9e2-30c651e10e57
+    m_ActionName: Main Inputs/RightArrowButton[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9cf39a95-cfb3-41aa-bfb8-26e829512ecf
+    m_ActionName: Main Inputs/LeftArrowButton[/Keyboard/a]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Main Inputs
@@ -1123,7 +1135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1774240049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,12 +1199,24 @@ MonoBehaviour:
     m_ActionName: Main Inputs/Lever Right[/Keyboard/g,/Keyboard/t]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 438e7e70-8831-4c55-b9b3-84287f3a7b05
-    m_ActionName: Main Inputs/Button Arrow[/Keyboard/z,/Keyboard/s,/Keyboard/q,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: f7499b86-522c-465a-ae4a-c2d0082bfab3
     m_ActionName: Main Inputs/BlackWhiteButton[/Keyboard/q,/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 276530d5-8c45-46d8-9263-f1007589e6a0
+    m_ActionName: Main Inputs/UpArrowButton[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c8b63db2-6107-44f6-a511-2b0240d7282f
+    m_ActionName: Main Inputs/DownArrowButton[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dba2dd14-efce-4ca7-a9e2-30c651e10e57
+    m_ActionName: Main Inputs/RightArrowButton[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9cf39a95-cfb3-41aa-bfb8-26e829512ecf
+    m_ActionName: Main Inputs/LeftArrowButton[/Keyboard/a]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Main Inputs
@@ -1521,6 +1545,162 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2145522994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2145522997}
+  - component: {fileID: 2145522996}
+  - component: {fileID: 2145522995}
+  m_Layer: 0
+  m_Name: QTE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2145522995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145522994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143cf56e221842746bde4448f1140e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  qteSize: 4
+--- !u!114 &2145522996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145522994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 772a9ebe07a1d484487cbef43e89f1c1, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e5a422a8-929c-47ed-8cd7-b87659afc856
+    m_ActionName: Main Inputs/Crank[/Mouse/delta/left,/Mouse/delta/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b593b0ab-321f-41b3-83a1-85d891471310
+    m_ActionName: Main Inputs/Lever Left[/Keyboard/f,/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ff5daa0e-e986-43f6-a7eb-a2de54c8f579
+    m_ActionName: Main Inputs/Lever Right[/Keyboard/g,/Keyboard/t]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f7499b86-522c-465a-ae4a-c2d0082bfab3
+    m_ActionName: Main Inputs/BlackWhiteButton[/Keyboard/q,/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2145522995}
+        m_TargetAssemblyTypeName: QTE, Assembly-CSharp
+        m_MethodName: UpInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 276530d5-8c45-46d8-9263-f1007589e6a0
+    m_ActionName: Main Inputs/UpArrowButton[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2145522995}
+        m_TargetAssemblyTypeName: QTE, Assembly-CSharp
+        m_MethodName: DownInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c8b63db2-6107-44f6-a511-2b0240d7282f
+    m_ActionName: Main Inputs/DownArrowButton[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2145522995}
+        m_TargetAssemblyTypeName: QTE, Assembly-CSharp
+        m_MethodName: RightInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: dba2dd14-efce-4ca7-a9e2-30c651e10e57
+    m_ActionName: Main Inputs/RightArrowButton[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2145522995}
+        m_TargetAssemblyTypeName: QTE, Assembly-CSharp
+        m_MethodName: LeftInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9cf39a95-cfb3-41aa-bfb8-26e829512ecf
+    m_ActionName: Main Inputs/LeftArrowButton[/Keyboard/a]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Main Inputs
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!4 &2145522997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145522994}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.003167197, y: -0.9962832, z: -0.6770989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1529,3 +1709,4 @@ SceneRoots:
   - {fileID: 1883653466}
   - {fileID: 89483141}
   - {fileID: 1774240050}
+  - {fileID: 2145522997}

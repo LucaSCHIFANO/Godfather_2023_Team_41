@@ -33,18 +33,45 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Button Arrow",
-                    "type": "Value",
-                    "id": "438e7e70-8831-4c55-b9b3-84287f3a7b05",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "BlackWhiteButton",
                     "type": "Button",
                     "id": "f7499b86-522c-465a-ae4a-c2d0082bfab3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UpArrowButton",
+                    "type": "Button",
+                    "id": "276530d5-8c45-46d8-9263-f1007589e6a0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DownArrowButton",
+                    "type": "Button",
+                    "id": "c8b63db2-6107-44f6-a511-2b0240d7282f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightArrowButton",
+                    "type": "Button",
+                    "id": "dba2dd14-efce-4ca7-a9e2-30c651e10e57",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftArrowButton",
+                    "type": "Button",
+                    "id": "9cf39a95-cfb3-41aa-bfb8-26e829512ecf",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -152,61 +179,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "2D Vector",
-                    "id": "cc5834f1-333f-4d25-af42-1f65b3d030db",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Button Arrow",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "9df87295-2b08-4dee-9951-86b271016806",
-                    "path": "<Keyboard>/z",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Button Arrow",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "ecd0ac3b-f825-4a87-afa9-93e70e3fdc00",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Button Arrow",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "d24e1daa-f10a-4759-ae0f-8748c59891a4",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Button Arrow",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "fc49bd83-bb99-4454-b7ad-a941e69b9cf9",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Button Arrow",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "1D Axis",
                     "id": "aec6ef39-b9e7-4c31-b4fb-3101fa663959",
                     "path": "1DAxis",
@@ -238,6 +210,50 @@
                     "action": "BlackWhiteButton",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "495b6f16-f98f-4414-980f-302b0c8b5b60",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UpArrowButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73eed7da-3920-46d9-9876-c4d84fed3a5c",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DownArrowButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d5fa5aa7-7565-45b3-b4e6-511b948a621e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftArrowButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5270b743-704e-49e3-b932-1e12c57a070a",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightArrowButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
