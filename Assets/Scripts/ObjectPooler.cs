@@ -8,8 +8,6 @@ public class ObjectPooler : MonoBehaviour
 
     public List<GameObject> pooledObjects = new List<GameObject>();
 
-    public List<GameObject> modulePrefab;
-
     GameObject player;
 
     private void Awake()
@@ -22,11 +20,6 @@ public class ObjectPooler : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < modulePrefab.Count; i++)
-        {
-            pooledObjects.Add(modulePrefab[i]);
-        }
-
         player = GameObject.FindGameObjectWithTag("Player");
     }
 

@@ -123,52 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &219181810
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 219181811}
-  - component: {fileID: 219181812}
-  m_Layer: 0
-  m_Name: PoolingSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &219181811
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219181810}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2106609493}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &219181812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219181810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd460121e2655b34d97a4b3c8a285311, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjects: []
-  modulePrefab: []
 --- !u!1 &374820821
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,13 +587,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingPosition: {fileID: 1788320035}
-  moduleList:
+  _moduleList:
   - {fileID: 7163501031031284216, guid: 2228b6339e2468e46bd7726698674fea, type: 3}
   - {fileID: 7163501031031284216, guid: f03b9e68bef27554bb218202a929d3ab, type: 3}
   - {fileID: 7163501031031284216, guid: 53659a3cfac396045b96c27c9eb59935, type: 3}
   - {fileID: 7163501031031284216, guid: 76c02b98cd930554a9db86c925db35fc, type: 3}
   - {fileID: 7163501031031284216, guid: 7494f173fa64d1f4eb628aceefff9b0d, type: 3}
-  usedModule: []
   canSpawn: 0
 --- !u!1 &1693433907
 GameObject:
@@ -1068,7 +1021,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 219181811}
   - {fileID: 1788320035}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

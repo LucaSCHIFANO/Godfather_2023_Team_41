@@ -7,48 +7,51 @@ public class PoolingGenerator : MonoBehaviour
 {
     [SerializeField] Transform loadingPosition;
 
-    [SerializeField] private List<GameObject> moduleList = new List<GameObject>();
-    [SerializeField] private List<GameObject> usedModule = new List<GameObject>();
+    [SerializeField] private List<GameObject> _moduleList = new List<GameObject>();
 
     GameObject actualModule;
     public bool canSpawn;
     bool moduleNotUsed;
 
+    GameObject player;
+
     void Start()
     {
-        for (int i = 0; i < moduleList.Count; i++)
-        {
-            moduleNotUsed = false;
-            while (!moduleNotUsed)
-            {
-                actualModule = moduleList[Random.Range(0, moduleList.Count)];
-                if (!usedModule.Contains(actualModule))
-                {
-                    moduleNotUsed = true;
-                }
-            }
+        player = GameObject.FindGameObjectWithTag("Player");
 
-            usedModule.Add(actualModule);
+        for (int i = 0; i < _moduleList.Count; i++)
+        {
+            actualModule = _moduleList[Random.Range(0, _moduleList.Count)];
+
             GameObject moduleCharged = Instantiate(actualModule);
-            ObjectPooler.instance.pooledObjects.Add(moduleCharged);
+
             moduleCharged.transform.position = loadingPosition.position;
-            loadingPosition.transform.position = loadingPosition.transform.position + new Vector3(35f, 0, 0);
-            ObjectPooler.instance.modulePrefab.Add(moduleCharged);
+            loadingPosition.transform.position += new Vector3(35f, 0, 0);
+
             moduleCharged.AddComponent<ModuleObject>();
         }
     }
 
     void Update()
     {
+        float distFromPlayer = (loadingPosition.transform.position.x - player.transform.position.x);
+
+        if (distFromPlayer < 70)
+        {
+            canSpawn = true;
+        }
+
         if (canSpawn)
         {
-            GameObject module = ObjectPooler.instance.GetPooledObject();
+            GameObject _module = _moduleList[Random.Range(0, _moduleList.Count)];
 
-            if (module != null)
+            if (_module != null)
             {
-                module.transform.position = loadingPosition.transform.position;
-                loadingPosition.transform.position = loadingPosition.transform.position + new Vector3(35f, 0, 0);
-                module.SetActive(true);
+                GameObject _newModule = Instantiate(_module);
+
+                _newModule.transform.position = loadingPosition.transform.position;
+                loadingPosition.transform.position += new Vector3(35f, 0, 0);
+
                 canSpawn = false;
             }
         }
