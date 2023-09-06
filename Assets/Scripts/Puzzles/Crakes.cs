@@ -6,14 +6,19 @@ using UnityEngine.InputSystem;
 
 public class Crakes : MonoBehaviour
 {
+    [Header("Objects")]
     [SerializeField] GameObject crake1;
     [SerializeField] GameObject crake2;
+
+    [Header("Values")]
     [SerializeField] float speed;
     [SerializeField] Vector2 randomStartPosition;
     [SerializeField] Vector2 limits;
 
     private float value1;
     private float value2;
+
+    private bool isActivated;
 
     private void Awake()
     {
@@ -35,7 +40,7 @@ public class Crakes : MonoBehaviour
             ClampY(crake1);
         }
 
-        if (value2 < 0) 
+        if (value2 < 0)
         { 
             crake2.transform.Translate(0, -1 * speed, 0); 
             ClampY(crake2);
@@ -58,16 +63,25 @@ public class Crakes : MonoBehaviour
 
     public void LeverLeftInput(InputAction.CallbackContext context)
     {
-        if (crake1 == null) return;
+        if (crake1 == null || !isActivated) return;
 
         value1 = context.ReadValue<float>();
     }
 
     public void LeverRightInput(InputAction.CallbackContext context)
     {
-        if (crake2 == null) return;
+        if (crake2 == null || !isActivated) return;
 
         value2 = context.ReadValue<float>();
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PuzzleActivation")
+        {
+            isActivated = true;
+        }
+    }
+
 }

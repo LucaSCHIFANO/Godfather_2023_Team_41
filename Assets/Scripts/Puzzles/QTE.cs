@@ -5,9 +5,25 @@ using UnityEngine.InputSystem;
 
 public class QTE : MonoBehaviour
 {
+    [Header("Reference")]
+    [SerializeField] private Reference<Score> scoreManager;
+
+    [Header("QTE")]
     [SerializeField] private int qteSize;
+    [SerializeField] private GameObject circle;
+    [SerializeField] private List<Transform> circlePos;
+
     private Direction[] directions;
     private int idQte;
+
+    [Header("Door")]
+    [SerializeField] GameObject door;
+    [SerializeField] float doorSpeed;
+    private bool isOkay;
+
+    private bool isActivated;
+
+
 
     enum Direction
     {
@@ -42,6 +58,7 @@ public class QTE : MonoBehaviour
             }
         }
 
+        UpdateCirclePos();
         Debug.Log($" QTE : {directions[0]} {directions[1]} {directions[2]} {directions[3]}");
     }
     void CheckInput(Direction dir)
@@ -49,37 +66,59 @@ public class QTE : MonoBehaviour
         if (directions[idQte] == dir)
         {
             idQte++;
-            if (idQte >= directions.Length) Debug.Log($"Step {idQte} completed !! Puzzle completed !!");
+            if (idQte >= directions.Length) MoveDoor();
             else Debug.Log($"Step {idQte} completed !!");
+            UpdateCirclePos();
         }
         else
         {
             Debug.Log($"Wrong !!");
             idQte = 0;
+            UpdateCirclePos();
         }
+    }
+
+    void UpdateCirclePos()
+    {
+        if (idQte >= circlePos.Count) circle.SetActive(false);
+        else circle.transform.position = circlePos[idQte].transform.position;
+    }
+
+    void MoveDoor()
+    {
+        door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed * Time.deltaTime, 0);
+        scoreManager.Instance.AddScore(100);
     }
 
     public void UpInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         CheckInput(Direction.Up);
     }
 
     public void DownInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         CheckInput(Direction.Down);
     }
 
     public void LeftInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         CheckInput(Direction.Left);
     }
 
     public void RightInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         CheckInput(Direction.Right);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PuzzleActivation")
+        {
+            isActivated = true;
+        }
     }
 }
