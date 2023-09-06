@@ -25,6 +25,8 @@ public class Valve : MonoBehaviour
     [SerializeField] float doorSpeed;
     private bool isOkay;
 
+    private bool isActivated;
+
 
     private void Awake()
     {
@@ -71,7 +73,7 @@ public class Valve : MonoBehaviour
 
     public void MovementInput(InputAction.CallbackContext context)
     {
-        if (isOkay) return;
+        if (isOkay || !isActivated) return;
         float value = context.ReadValue<float>();
 
         switch (currentValve)
@@ -93,6 +95,8 @@ public class Valve : MonoBehaviour
 
     public void LeverLeftInput(InputAction.CallbackContext context)
     {
+        if (!isActivated) return;
+
         float value = context.ReadValue<float>();
 
         if(value > 0) 
@@ -106,5 +110,13 @@ public class Valve : MonoBehaviour
             if (currentValve > 2) currentValve = 0;
         }
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PuzzleActivation")
+        {
+            isActivated = true;
+        }
     }
 }

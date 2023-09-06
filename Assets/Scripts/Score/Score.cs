@@ -18,10 +18,7 @@ public class Score : MonoBehaviour
         ActualizeScore();
     }
 
-    void Update()
-    {
-        
-    }
+
 
     public void AddScore(int score)
     {

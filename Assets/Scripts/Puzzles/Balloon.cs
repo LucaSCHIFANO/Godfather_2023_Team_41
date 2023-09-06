@@ -24,6 +24,8 @@ public class Balloon : MonoBehaviour
     [Header("BallonSize")]
     [SerializeField] Vector2 balloonSizeLimits;
 
+    private bool isActivated;
+
     void Start()
     {
         
@@ -41,13 +43,21 @@ public class Balloon : MonoBehaviour
 
     public void PumpInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         currentBallonGauge += increaseBallonGauge;
 
         if(currentBallonGauge >= maxBallonGauge)
         {
             scoreManager.Instance.AddScore(100);
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PuzzleActivation")
+        {
+            isActivated = true;
         }
     }
 }

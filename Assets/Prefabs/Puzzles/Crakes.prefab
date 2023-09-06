@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 6715648257151078665}
   - component: {fileID: 5360630721899660638}
   - component: {fileID: 1562149660332718899}
+  - component: {fileID: 7393355146565208609}
   m_Layer: 0
   m_Name: Crakes
   m_TagString: Untagged
@@ -174,6 +175,27 @@ MonoBehaviour:
   speed: 0.1
   randomStartPosition: {x: -4, y: 4}
   limits: {x: -5, y: 5}
+--- !u!65 &7393355146565208609
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406041183611487610}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.217541, y: 1.2379472, z: 1.7628305}
+  m_Center: {x: -0.10877049, y: 0.11897361, z: -0.04601124}
 --- !u!1 &5437780997490966726
 GameObject:
   m_ObjectHideFlags: 0

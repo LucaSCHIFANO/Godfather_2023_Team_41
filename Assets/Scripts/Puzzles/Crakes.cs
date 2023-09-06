@@ -18,6 +18,8 @@ public class Crakes : MonoBehaviour
     private float value1;
     private float value2;
 
+    private bool isActivated;
+
     private void Awake()
     {
         crake1.transform.Translate(0, Random.Range(randomStartPosition.x, randomStartPosition.y), 0);
@@ -61,16 +63,25 @@ public class Crakes : MonoBehaviour
 
     public void LeverLeftInput(InputAction.CallbackContext context)
     {
-        if (crake1 == null) return;
+        if (crake1 == null || !isActivated) return;
 
         value1 = context.ReadValue<float>();
     }
 
     public void LeverRightInput(InputAction.CallbackContext context)
     {
-        if (crake2 == null) return;
+        if (crake2 == null || !isActivated) return;
 
         value2 = context.ReadValue<float>();
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PuzzleActivation")
+        {
+            isActivated = true;
+        }
+    }
+
 }

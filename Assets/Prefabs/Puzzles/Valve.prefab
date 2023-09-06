@@ -803,6 +803,7 @@ GameObject:
   - component: {fileID: 5463879046981565610}
   - component: {fileID: 4181133227141443355}
   - component: {fileID: 3248778246621986814}
+  - component: {fileID: 882133834315753077}
   m_Layer: 0
   m_Name: Valve
   m_TagString: Untagged
@@ -937,11 +938,32 @@ MonoBehaviour:
   wheel2: {fileID: 6682721931188349767}
   wheel3: {fileID: 7745872208307418238}
   wheelref: {fileID: 349315716341877994}
-  speed: 25
+  speed: 3
   randomStartPosition: {x: 20, y: 80}
   tolerance: 0.05
   door: {fileID: 4931763054039768852}
   doorSpeed: 25
+--- !u!65 &882133834315753077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7480698644863568166}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.217541, y: 1.2379472, z: 1.7628305}
+  m_Center: {x: -0.10877049, y: 0.11897361, z: -0.04601124}
 --- !u!1 &7679747789788288106
 GameObject:
   m_ObjectHideFlags: 0

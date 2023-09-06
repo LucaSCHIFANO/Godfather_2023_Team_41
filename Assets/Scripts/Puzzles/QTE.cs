@@ -21,6 +21,8 @@ public class QTE : MonoBehaviour
     [SerializeField] float doorSpeed;
     private bool isOkay;
 
+    private bool isActivated;
+
 
 
     enum Direction
@@ -90,25 +92,33 @@ public class QTE : MonoBehaviour
 
     public void UpInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         CheckInput(Direction.Up);
     }
 
     public void DownInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         CheckInput(Direction.Down);
     }
 
     public void LeftInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         CheckInput(Direction.Left);
     }
 
     public void RightInput(InputAction.CallbackContext context)
     {
-        if (!context.started) return;
+        if (!context.started || !isActivated) return;
         CheckInput(Direction.Right);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PuzzleActivation")
+        {
+            isActivated = true;
+        }
     }
 }
