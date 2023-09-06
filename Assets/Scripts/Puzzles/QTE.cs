@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 public class QTE : MonoBehaviour
 {
     [SerializeField] private int qteSize;
+    [SerializeField] private GameObject circle;
+    [SerializeField] private List<Transform> circlePos;
+
     private Direction[] directions;
     private int idQte;
 
@@ -42,6 +45,7 @@ public class QTE : MonoBehaviour
             }
         }
 
+        UpdateCirclePos();
         Debug.Log($" QTE : {directions[0]} {directions[1]} {directions[2]} {directions[3]}");
     }
     void CheckInput(Direction dir)
@@ -51,12 +55,20 @@ public class QTE : MonoBehaviour
             idQte++;
             if (idQte >= directions.Length) Debug.Log($"Step {idQte} completed !! Puzzle completed !!");
             else Debug.Log($"Step {idQte} completed !!");
+            UpdateCirclePos();
         }
         else
         {
             Debug.Log($"Wrong !!");
             idQte = 0;
+            UpdateCirclePos();
         }
+    }
+
+    void UpdateCirclePos()
+    {
+        if (idQte >= circlePos.Count) circle.SetActive(false);
+        else circle.transform.position = circlePos[idQte].transform.position;
     }
 
     public void UpInput(InputAction.CallbackContext context)
