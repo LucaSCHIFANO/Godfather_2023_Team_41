@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed = 1f;
     [SerializeField] private float _speedModifier = 1f;
     [SerializeField] private float _slowModifier = 1f;
+    [SerializeField] private float _minSpeed = 1f;
+    [SerializeField] private float _maxSpeed = 1f;
 
     [Space]
     [Header("Jump Values")]
@@ -48,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         if (canMove)
         {
             _speed += Time.deltaTime / 20;
-            _speed = Mathf.Clamp(_speed, 3, 4);
+            _speed = Mathf.Clamp(_speed, _minSpeed, _maxSpeed);
 
             transform.position += new Vector3(1, 0, 0) * Time.deltaTime * 4 * _speed / _slowModifier * _speedModifier;
         }
