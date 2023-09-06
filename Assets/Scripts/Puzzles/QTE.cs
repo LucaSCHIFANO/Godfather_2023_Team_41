@@ -5,12 +5,18 @@ using UnityEngine.InputSystem;
 
 public class QTE : MonoBehaviour
 {
+    [Header("QTE")]
     [SerializeField] private int qteSize;
     [SerializeField] private GameObject circle;
     [SerializeField] private List<Transform> circlePos;
 
     private Direction[] directions;
     private int idQte;
+
+    [Header("Door")]
+    [SerializeField] GameObject door;
+    [SerializeField] float doorSpeed;
+    private bool isOkay;
 
     enum Direction
     {
@@ -53,7 +59,7 @@ public class QTE : MonoBehaviour
         if (directions[idQte] == dir)
         {
             idQte++;
-            if (idQte >= directions.Length) Debug.Log($"Step {idQte} completed !! Puzzle completed !!");
+            if (idQte >= directions.Length) MoveDoor();
             else Debug.Log($"Step {idQte} completed !!");
             UpdateCirclePos();
         }
@@ -69,6 +75,11 @@ public class QTE : MonoBehaviour
     {
         if (idQte >= circlePos.Count) circle.SetActive(false);
         else circle.transform.position = circlePos[idQte].transform.position;
+    }
+
+    void MoveDoor()
+    {
+        door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed * Time.deltaTime, 0);
     }
 
     public void UpInput(InputAction.CallbackContext context)

@@ -17,6 +17,12 @@ public class Valve : MonoBehaviour
     private int currentValve;
     [SerializeField] float tolerance;
 
+    [Header("Door")]
+    [SerializeField] GameObject door;
+    [SerializeField] float doorSpeed;
+    private bool isOkay;
+
+
     private void Awake()
     {
         wheel1.transform.Rotate(0, 0,Random.Range(randomStartPosition.x, randomStartPosition.y) * speed);
@@ -28,9 +34,10 @@ public class Valve : MonoBehaviour
     void Update()
     {
         
-        if(CheckAngle(wheel1) && CheckAngle(wheel2) && CheckAngle(wheel3))
+        if(CheckAngle(wheel1) && CheckAngle(wheel2) && CheckAngle(wheel3) && !isOkay)
         {
-            Debug.Log("Done !!");
+            isOkay = true;
+            MoveDoor();
         }
     }
 
@@ -48,14 +55,19 @@ public class Valve : MonoBehaviour
 
     bool CheckAngle(GameObject wheel)
     {
-        //Debug.Log($"{wheel.name} {wheel.transform.rotation.z} {wheelref.transform.rotation.z} ");
         if (Mathf.Abs(wheel.transform.rotation.z) > wheelref.transform.rotation.z - tolerance && Mathf.Abs(wheel.transform.rotation.z) < wheelref.transform.rotation.z + tolerance) return true;
         return false;
+    }
+
+    void MoveDoor()
+    {
+        door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed * Time.deltaTime, 0);
     }
 
 
     public void MovementInput(InputAction.CallbackContext context)
     {
+        if (isOkay) return;
         float value = context.ReadValue<float>();
 
         switch (currentValve)
