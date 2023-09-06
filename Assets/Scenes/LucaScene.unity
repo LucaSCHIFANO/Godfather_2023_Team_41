@@ -2559,8 +2559,10 @@ MonoBehaviour:
   wheel1: {fileID: 1704116751}
   wheel2: {fileID: 418884192}
   wheel3: {fileID: 698995083}
+  wheelref: {fileID: 1460227817}
   speed: 1
   randomStartPosition: {x: 20, y: 80}
+  tolerance: 0.05
 --- !u!114 &1753996164
 MonoBehaviour:
   m_ObjectHideFlags: 0
