@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Balloon : MonoBehaviour
 {
+    [Header("Reference")]
+    [SerializeField] private Reference<Score> scoreManager;
+
     [Header("Objects")]
     [SerializeField] GameObject balloon;
     [SerializeField] Slider slider;
@@ -42,6 +46,7 @@ public class Balloon : MonoBehaviour
 
         if(currentBallonGauge >= maxBallonGauge)
         {
+            scoreManager.Instance.AddScore(100);
             Destroy(gameObject);
         }
     }

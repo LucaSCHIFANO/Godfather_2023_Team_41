@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class QTE : MonoBehaviour
 {
+    [Header("Reference")]
+    [SerializeField] private Reference<Score> scoreManager;
+
     [Header("QTE")]
     [SerializeField] private int qteSize;
     [SerializeField] private GameObject circle;
@@ -17,6 +20,8 @@ public class QTE : MonoBehaviour
     [SerializeField] GameObject door;
     [SerializeField] float doorSpeed;
     private bool isOkay;
+
+
 
     enum Direction
     {
@@ -80,6 +85,7 @@ public class QTE : MonoBehaviour
     void MoveDoor()
     {
         door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed * Time.deltaTime, 0);
+        scoreManager.Instance.AddScore(100);
     }
 
     public void UpInput(InputAction.CallbackContext context)

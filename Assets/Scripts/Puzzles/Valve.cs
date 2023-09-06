@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class Valve : MonoBehaviour
 {
+    [Header("Reference")]
+    [SerializeField] private Reference<Score> scoreManager;
+
     [Header("Objects")]
     [SerializeField] GameObject wheel1;
     [SerializeField] GameObject wheel2;
@@ -62,6 +65,7 @@ public class Valve : MonoBehaviour
     void MoveDoor()
     {
         door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed * Time.deltaTime, 0);
+        scoreManager.Instance.AddScore(100);
     }
 
 
