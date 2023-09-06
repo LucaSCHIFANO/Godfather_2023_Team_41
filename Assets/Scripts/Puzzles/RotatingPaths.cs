@@ -6,8 +6,11 @@ using UnityEngine.InputSystem;
 
 public class RotatingPaths : MonoBehaviour
 {
+    [Header("Objects")]
     [SerializeField] GameObject wheel1;
     [SerializeField] GameObject wheel2;
+
+    [Header("Values")]
     [SerializeField] float speed;
     [SerializeField] Vector2 randomStartPosition;
 

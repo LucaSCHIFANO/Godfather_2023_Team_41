@@ -33,15 +33,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "BlackWhiteButton",
-                    "type": "Button",
-                    "id": "f7499b86-522c-465a-ae4a-c2d0082bfab3",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "UpArrowButton",
                     "type": "Button",
                     "id": "276530d5-8c45-46d8-9263-f1007589e6a0",
@@ -72,6 +63,24 @@
                     "name": "LeftArrowButton",
                     "type": "Button",
                     "id": "9cf39a95-cfb3-41aa-bfb8-26e829512ecf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "WhiteButton",
+                    "type": "Button",
+                    "id": "52f9f1ae-3e41-452c-b32f-7cf3eab0997a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BlackButton",
+                    "type": "Button",
+                    "id": "a8bfa4ad-cb04-4e99-a57d-00c015a5e63c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -179,39 +188,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "1D Axis",
-                    "id": "aec6ef39-b9e7-4c31-b4fb-3101fa663959",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "BlackWhiteButton",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "8dc88e48-dfc4-4933-af7c-16720ad6efab",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "BlackWhiteButton",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "41144b36-2046-4024-9451-820fb4e6679d",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "BlackWhiteButton",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
                     "id": "495b6f16-f98f-4414-980f-302b0c8b5b60",
                     "path": "<Keyboard>/w",
@@ -252,6 +228,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "RightArrowButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ff7cd51-1882-4da9-a78a-0e885a1fbe0a",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WhiteButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4961275-dbe9-429e-84d5-b0ea94e8963f",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BlackButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

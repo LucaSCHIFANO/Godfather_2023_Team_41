@@ -6,8 +6,11 @@ using UnityEngine.InputSystem;
 
 public class Crakes : MonoBehaviour
 {
+    [Header("Objects")]
     [SerializeField] GameObject crake1;
     [SerializeField] GameObject crake2;
+
+    [Header("Values")]
     [SerializeField] float speed;
     [SerializeField] Vector2 randomStartPosition;
     [SerializeField] Vector2 limits;
@@ -35,7 +38,7 @@ public class Crakes : MonoBehaviour
             ClampY(crake1);
         }
 
-        if (value2 < 0) 
+        if (value2 < 0)
         { 
             crake2.transform.Translate(0, -1 * speed, 0); 
             ClampY(crake2);
