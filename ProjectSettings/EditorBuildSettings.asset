@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 097b7508873976142940a561d657dcca
+  - enabled: 1
+    path: Assets/Scenes/DanTestLevel.unity
+    guid: 4300e4a092069c14e9deff1964604705
   m_configObjects: {}
