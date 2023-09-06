@@ -637,6 +637,8 @@ MonoBehaviour:
   - {fileID: 7163501031031284216, guid: 2228b6339e2468e46bd7726698674fea, type: 3}
   - {fileID: 7163501031031284216, guid: f03b9e68bef27554bb218202a929d3ab, type: 3}
   - {fileID: 7163501031031284216, guid: 53659a3cfac396045b96c27c9eb59935, type: 3}
+  - {fileID: 7163501031031284216, guid: 76c02b98cd930554a9db86c925db35fc, type: 3}
+  - {fileID: 7163501031031284216, guid: 7494f173fa64d1f4eb628aceefff9b0d, type: 3}
   usedModule: []
   canSpawn: 0
 --- !u!1 &1693433907
