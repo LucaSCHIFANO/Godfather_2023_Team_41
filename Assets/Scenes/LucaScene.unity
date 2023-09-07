@@ -1019,34 +1019,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1558895708091281022, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.28504547
-      objectReference: {fileID: 0}
-    - target: {fileID: 1558895708091281022, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.006
-      objectReference: {fileID: 0}
-    - target: {fileID: 1558895708091281022, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.3321
-      objectReference: {fileID: 0}
-    - target: {fileID: 3038885701538782941, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3038885701538782941, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3248778246621986814, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: tolerance
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4194883230253905066, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5463879046981565610, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1087,21 +1059,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6396540450024393407, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6396540450024393407, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7480698644863568166, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
       propertyPath: m_Name
       value: Valve
-      objectReference: {fileID: 0}
-    - target: {fileID: 7480698644863568166, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
