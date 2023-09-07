@@ -9,7 +9,7 @@ public class ModuleObject : MonoBehaviour
 
     void Start()
     {
-        generator = GameObject.FindGameObjectWithTag("ModuleGenerator").GetComponent<PoolingGenerator>(); ;
+        generator = GameObject.FindGameObjectWithTag("ModuleGenerator").GetComponent<PoolingGenerator>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
