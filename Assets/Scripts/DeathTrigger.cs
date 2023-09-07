@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DeathTrigger : MonoBehaviour
@@ -22,6 +23,7 @@ public class DeathTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("dead");
+            SceneManager.LoadScene(1);
 
         }
     }
