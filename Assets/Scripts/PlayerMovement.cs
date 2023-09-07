@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+
+
         _rigidBody = GetComponent<Rigidbody>();
         _collision = GetComponent<PlayerCollision>();
         _playerBoxCollider = GetComponent<BoxCollider>();
@@ -49,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (canMove)
         {
-            _speed += Time.deltaTime / 20;
+            _speed += Time.deltaTime / 40;
             _speed = Mathf.Clamp(_speed, _minSpeed, _maxSpeed);
 
             transform.position += new Vector3(1, 0, 0) * Time.deltaTime * 4 * _speed / _slowModifier * _speedModifier;

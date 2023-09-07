@@ -8,6 +8,7 @@ public class PoolingGenerator : MonoBehaviour
     [SerializeField] Transform loadingPosition;
 
     [SerializeField] private List<GameObject> _moduleList = new List<GameObject>();
+    [SerializeField] private float _moduleGapDistance;
 
     GameObject actualModule;
     public bool canSpawn;
@@ -26,7 +27,7 @@ public class PoolingGenerator : MonoBehaviour
             GameObject moduleCharged = Instantiate(actualModule);
 
             moduleCharged.transform.position = loadingPosition.position;
-            loadingPosition.transform.position += new Vector3(35f, 0, 0);
+            loadingPosition.transform.position += new Vector3(_moduleGapDistance, 0, 0);
 
             moduleCharged.AddComponent<ModuleObject>();
         }
@@ -50,7 +51,7 @@ public class PoolingGenerator : MonoBehaviour
                 GameObject _newModule = Instantiate(_module);
 
                 _newModule.transform.position = loadingPosition.transform.position;
-                loadingPosition.transform.position += new Vector3(35f, 0, 0);
+                loadingPosition.transform.position += new Vector3(_moduleGapDistance, 0, 0);
 
                 canSpawn = false;
             }
