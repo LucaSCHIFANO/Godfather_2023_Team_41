@@ -9,7 +9,7 @@ public class Valve : MonoBehaviour
     [SerializeField] private Reference<Score> scoreManager;
 
     [Header("Objects")]
-    [SerializeField] GameObject wheel1;
+    //[SerializeField] GameObject wheel1;
     [SerializeField] GameObject wheel2;
     [SerializeField] GameObject wheel3;
     [SerializeField] GameObject wheelref;
@@ -30,16 +30,18 @@ public class Valve : MonoBehaviour
 
     private void Awake()
     {
-        wheel1.transform.Rotate(0, 0,Random.Range(randomStartPosition.x, randomStartPosition.y) * speed);
+        //wheel1.transform.Rotate(0, 0,Random.Range(randomStartPosition.x, randomStartPosition.y) * speed);
         wheel2.transform.Rotate(0, 0,Random.Range(randomStartPosition.x, randomStartPosition.y) * speed);
         wheel3.transform.Rotate(0, 0,Random.Range(randomStartPosition.x, randomStartPosition.y) * speed);
         wheelref.transform.Rotate(0, 0,Random.Range(randomStartPosition.x, randomStartPosition.y) * speed);
+        isActivated = true;
+        currentValve = 1;
     }
 
     void Update()
     {
         
-        if(CheckAngle(wheel1) && CheckAngle(wheel2) && CheckAngle(wheel3) && !isOkay)
+        if(/*CheckAngle(wheel1) && */CheckAngle(wheel2) && CheckAngle(wheel3) && !isOkay)
         {
             isOkay = true;
             MoveDoor();
@@ -60,7 +62,8 @@ public class Valve : MonoBehaviour
 
     bool CheckAngle(GameObject wheel)
     {
-        if (Mathf.Abs(wheel.transform.rotation.z) > wheelref.transform.rotation.z - tolerance && Mathf.Abs(wheel.transform.rotation.z) < wheelref.transform.rotation.z + tolerance) return true;
+        Debug.Log(wheel.transform.eulerAngles.z + " " + wheelref.transform.eulerAngles.z);
+        if (wheel.transform.eulerAngles.z > wheelref.transform.eulerAngles.z - tolerance && wheel.transform.eulerAngles.z < wheelref.transform.eulerAngles.z + tolerance) return true;
         return false;
     }
 
@@ -79,7 +82,7 @@ public class Valve : MonoBehaviour
         switch (currentValve)
         {
             case 0:
-                RotateValve(wheel1, value);
+                //RotateValve(wheel1, value);
                 break;
             case 1:
                 RotateValve(wheel2, value);
@@ -97,17 +100,14 @@ public class Valve : MonoBehaviour
     {
         if (!isActivated) return;
 
-        float value = context.ReadValue<float>();
 
-        if(value > 0) 
+        if(currentValve == 1) 
         {
-            currentValve--;
-            if (currentValve < 0) currentValve = 2;
+            currentValve = 2;
         }
-        else if (value < 0)
+        else
         {
-            currentValve++;
-            if (currentValve > 2) currentValve = 0;
+            currentValve = 1;
         }
 
     }
