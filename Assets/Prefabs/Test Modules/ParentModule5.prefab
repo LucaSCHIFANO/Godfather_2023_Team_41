@@ -412,21 +412,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8954365119603219976}
     m_Modifications:
-    - target: {fileID: 3248778246621986814, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: doorSpeed
-      value: 10
+    - target: {fileID: 858720563437975262, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5463879046981565610, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.327
-      objectReference: {fileID: 0}
-    - target: {fileID: 5463879046981565610, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.327
-      objectReference: {fileID: 0}
-    - target: {fileID: 5463879046981565610, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.327
+    - target: {fileID: 4931763054039768852, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5463879046981565610, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
       propertyPath: m_LocalPosition.x
@@ -468,9 +460,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6302464033052514227, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.08640218
+      objectReference: {fileID: 0}
     - target: {fileID: 7480698644863568166, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
       propertyPath: m_Name
       value: Valve
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897249616719480331, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
