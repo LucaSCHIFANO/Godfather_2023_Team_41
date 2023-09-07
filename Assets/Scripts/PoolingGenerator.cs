@@ -6,8 +6,10 @@ using UnityEngine.Pool;
 public class PoolingGenerator : MonoBehaviour
 {
     [SerializeField] Transform loadingPosition;
+
     [SerializeField] private List<GameObject> moduleList = new List<GameObject>();
     [SerializeField] private List<GameObject> usedModule = new List<GameObject>();
+
     GameObject actualModule;
     public bool canSpawn;
     bool moduleNotUsed;
