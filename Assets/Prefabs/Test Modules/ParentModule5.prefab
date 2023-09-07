@@ -464,6 +464,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.08640218
       objectReference: {fileID: 0}
+    - target: {fileID: 6302464033052514227, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.992
+      objectReference: {fileID: 0}
     - target: {fileID: 7480698644863568166, guid: fea1ca769c508274fa439c5d1faab220, type: 3}
       propertyPath: m_Name
       value: Valve
