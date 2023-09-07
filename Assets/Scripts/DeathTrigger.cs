@@ -12,6 +12,7 @@ public class DeathTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CameraBehaviour._instance._cameraSpeedModifier = 0f;
+            PlayerMovement._instance._speedModifier = 0f;
             _deathMenu.SetActive(true);
             AudioManager._instance._sfxSource.Stop();
             AudioManager._instance.PlaySfxSound(AudioManager._instance._playerDeathSfx);
