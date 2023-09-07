@@ -153,6 +153,42 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: a8bfa4ad-cb04-4e99-a57d-00c015a5e63c
     m_ActionName: Main Inputs/BlackButton[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ab4b9eed-e8e5-4e98-b27b-7e809cb471be
+    m_ActionName: BorneInput/Crank[/Mouse/delta/left,/Mouse/delta/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8d897c0e-89c5-4f54-8b79-c2fcb03c2d36
+    m_ActionName: BorneInput/Lever Left[/Keyboard/v,/Keyboard/j]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3807bb12-bfe8-482f-b0e5-23bb5afd1e0a
+    m_ActionName: BorneInput/Lever Right[/Keyboard/6,/Keyboard/l]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d6eb6179-decf-466b-aaaa-a979aadf3fea
+    m_ActionName: BorneInput/UpArrowButton[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 49c7533a-4906-4783-9b4d-5de4bb5a320d
+    m_ActionName: BorneInput/DownArrowButton[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2cd4ac3b-b16e-430e-b468-cbefb267bf7a
+    m_ActionName: BorneInput/RightArrowButton[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a3feae8b-86f5-416a-a993-e0b67f472ee9
+    m_ActionName: BorneInput/LeftArrowButton[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: be3e717e-b3c1-4aaa-a2d2-00770ceda6f5
+    m_ActionName: BorneInput/WhiteButton[/Keyboard/g]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fcd0a4cf-c8ec-4c71-8589-a87b51ce48ec
+    m_ActionName: BorneInput/BlackButton[/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Main Inputs
