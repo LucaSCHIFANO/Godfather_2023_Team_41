@@ -1140,7 +1140,7 @@ MonoBehaviour:
   wheelref: {fileID: 349315716341877994}
   speed: 10
   randomStartPosition: {x: 20, y: 80}
-  tolerance: 7
+  tolerance: 8
   door: {fileID: 4931763054039768852}
   doorSpeed: 2
 --- !u!65 &882133834315753077

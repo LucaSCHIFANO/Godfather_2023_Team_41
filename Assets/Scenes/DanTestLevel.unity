@@ -1010,11 +1010,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4276580689025072026, guid: 79e46cfae2a467d469ccd4f4a084d9d8, type: 3}
       propertyPath: m_Size.x
-      value: 3.7
+      value: 7.7376995
       objectReference: {fileID: 0}
     - target: {fileID: 4276580689025072026, guid: 79e46cfae2a467d469ccd4f4a084d9d8, type: 3}
       propertyPath: m_Center.x
-      value: 6.5500946
+      value: 8.568944
       objectReference: {fileID: 0}
     - target: {fileID: 7783365050155414126, guid: 79e46cfae2a467d469ccd4f4a084d9d8, type: 3}
       propertyPath: m_Name
@@ -2409,7 +2409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7189057498b1c714794d7be2161b6409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deathMenu: {fileID: 1144679115}
   deathCanvas: {fileID: 11400000, guid: 50f95944cdaa0ca43b04722860e3f6c5, type: 2}
 --- !u!1 &2064593436
 GameObject:
