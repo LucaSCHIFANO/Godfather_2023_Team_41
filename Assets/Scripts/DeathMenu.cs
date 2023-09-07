@@ -5,8 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
-    private void ReloadLevel()
+    [SerializeField] private GameObject _deathMenu;
+
+    public void ReloadLevel()
     {
-        SceneManager.LoadScene()
+        SceneManager.LoadScene(1);
+        _deathMenu.SetActive(false);
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
+        _deathMenu.SetActive(false);
     }
 }

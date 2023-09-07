@@ -30,8 +30,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-
-
         _rigidBody = GetComponent<Rigidbody>();
         _collision = GetComponent<PlayerCollision>();
         _playerBoxCollider = GetComponent<BoxCollider>();

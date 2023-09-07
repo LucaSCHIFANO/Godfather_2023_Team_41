@@ -5,24 +5,17 @@ using UnityEngine.UI;
 
 public class DeathTrigger : MonoBehaviour
 {
-
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    [SerializeField] private GameObject _deathMenu;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("dead");
-
+            CameraBehaviour._instance._cameraSpeedModifier = 0f;
+            _deathMenu.SetActive(true);
+            AudioManager._instance._sfxSource.Stop();
+            AudioManager._instance.PlaySfxSound(AudioManager._instance._playerDeathSfx);
+            AudioManager._instance._musicSource.Stop();
         }
     }
 }
