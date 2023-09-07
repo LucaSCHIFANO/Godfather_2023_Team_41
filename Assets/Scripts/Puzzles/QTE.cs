@@ -67,12 +67,12 @@ public class QTE : MonoBehaviour
         {
             idQte++;
             if (idQte >= directions.Length) MoveDoor();
-            else Debug.Log($"Step {idQte} completed !!");
+            //else Debug.Log($"Step {idQte} completed !!");
             UpdateCirclePos();
         }
         else
         {
-            Debug.Log($"Wrong !!");
+            //Debug.Log($"Wrong !!");
             idQte = 0;
             UpdateCirclePos();
         }
