@@ -5,7 +5,7 @@ using UnityEngine;
 public class TriggerPoints : MonoBehaviour
 {
     [Header("Reference")]
-    [SerializeField] private Reference<Score> scoreManager;
+    [SerializeField] private ScoreRef scoreManager;
 
     private void OnTriggerEnter(Collider other)
     {

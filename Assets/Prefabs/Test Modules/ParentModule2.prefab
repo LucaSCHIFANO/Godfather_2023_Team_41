@@ -388,6 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _deathMenu: {fileID: 0}
+  deathCanvas: {fileID: 11400000, guid: 50f95944cdaa0ca43b04722860e3f6c5, type: 2}
 --- !u!1 &7163501031031284216
 GameObject:
   m_ObjectHideFlags: 0

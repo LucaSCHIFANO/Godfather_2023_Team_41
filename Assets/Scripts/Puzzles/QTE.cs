@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class QTE : MonoBehaviour
 {
     [Header("Reference")]
-    [SerializeField] private Reference<Score> scoreManager;
+    [SerializeField] private ScoreRef scoreManager;
 
     [Header("QTE")]
     [SerializeField] private int qteSize;

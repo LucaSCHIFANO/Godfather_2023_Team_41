@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Balloon : MonoBehaviour
 {
     [Header("Reference")]
-    [SerializeField] private Reference<Score> scoreManager;
+    [SerializeField] private ScoreRef scoreManager;
 
     [Header("Objects")]
     [SerializeField] GameObject balloon;

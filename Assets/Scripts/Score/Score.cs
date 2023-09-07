@@ -7,7 +7,7 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] private Reference<Score> scoreManager;
+    [SerializeField] private ScoreRef scoreManager;
     [SerializeField] private TextMeshProUGUI scoreText;
     private int currentScore;
 
@@ -30,4 +30,10 @@ public class Score : MonoBehaviour
     {
         scoreText.text = $"Score : {currentScore.ToString("00000")}";
     }
+
+    public int GetCurrentScore()
+    {
+        return currentScore;
+    }
+
 }

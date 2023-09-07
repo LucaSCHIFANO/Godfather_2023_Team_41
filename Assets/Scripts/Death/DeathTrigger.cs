@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DeathTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject _deathMenu;
+    [SerializeField] private DeathUiRef deathCanvas;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,10 +13,11 @@ public class DeathTrigger : MonoBehaviour
         {
             CameraBehaviour._instance._cameraSpeedModifier = 0f;
             PlayerMovement._instance._speedModifier = 0f;
-            _deathMenu.SetActive(true);
             AudioManager._instance._sfxSource.Stop();
             AudioManager._instance.PlaySfxSound(AudioManager._instance._playerDeathSfx);
             AudioManager._instance._musicSource.Stop();
+            deathCanvas.Instance.gameOver();
+
         }
     }
 }

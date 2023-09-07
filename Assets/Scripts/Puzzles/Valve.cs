@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Valve : MonoBehaviour
 {
     [Header("Reference")]
-    [SerializeField] private Reference<Score> scoreManager;
+    [SerializeField] private ScoreRef scoreManager;
 
     [Header("Objects")]
     //[SerializeField] GameObject wheel1;
