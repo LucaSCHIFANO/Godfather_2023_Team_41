@@ -92,7 +92,7 @@ public class QTE : MonoBehaviour
 
     void MoveDoor()
     {
-        door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed * Time.deltaTime, 0);
+        door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed, 0);
         scoreManager.Instance.AddScore(100);
     }
 

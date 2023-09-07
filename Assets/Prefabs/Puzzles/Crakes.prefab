@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crake1: {fileID: 748138411242931468}
   crake2: {fileID: 7733467588995299849}
-  speed: 0.1
+  speed: 5
   randomStartPosition: {x: -4, y: 4}
   limits: {x: -5, y: 5}
 --- !u!65 &7393355146565208609

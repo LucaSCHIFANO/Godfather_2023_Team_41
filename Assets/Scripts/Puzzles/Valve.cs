@@ -50,11 +50,11 @@ public class Valve : MonoBehaviour
     {
         if (value < 0)
         {
-            valve.transform.Rotate(0, 0, -value * speed);
+            valve.transform.Rotate(0, 0, -value * speed * Time.deltaTime);
         }
         else if (value > 0)
         {
-            valve.transform.Rotate(0, 0, -value * speed);
+            valve.transform.Rotate(0, 0, -value * speed * Time.deltaTime);
         }
     }
 
@@ -66,7 +66,7 @@ public class Valve : MonoBehaviour
 
     void MoveDoor()
     {
-        door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed * Time.deltaTime, 0);
+        door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed, 0);
         scoreManager.Instance.AddScore(100);
     }
 

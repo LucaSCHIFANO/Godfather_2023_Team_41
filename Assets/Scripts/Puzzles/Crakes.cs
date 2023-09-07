@@ -31,23 +31,23 @@ public class Crakes : MonoBehaviour
 
         if (value1 < 0)
         {
-            crake1.transform.Translate(0, -1 * speed, 0);
+            crake1.transform.Translate(0, -1 * speed * Time.deltaTime, 0);
             ClampY(crake1);
         }
         else if(value1 > 0) 
         {
-            crake1.transform.Translate(0, 1 * speed, 0);
+            crake1.transform.Translate(0, 1 * speed * Time.deltaTime, 0);
             ClampY(crake1);
         }
 
         if (value2 < 0)
         { 
-            crake2.transform.Translate(0, -1 * speed, 0); 
+            crake2.transform.Translate(0, -1 * speed * Time.deltaTime, 0); 
             ClampY(crake2);
         }
         else if (value2 > 0) 
         {
-            crake2.transform.Translate(0, 1 * speed, 0); 
+            crake2.transform.Translate(0, 1 * speed * Time.deltaTime, 0); 
             ClampY(crake2);
         }
 
