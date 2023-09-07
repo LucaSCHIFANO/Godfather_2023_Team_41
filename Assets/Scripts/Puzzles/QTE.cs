@@ -13,6 +13,8 @@ public class QTE : MonoBehaviour
     [SerializeField] private GameObject circle;
     [SerializeField] private List<Transform> circlePos;
 
+    [SerializeField] private List<Sprite> arrows;
+
     private Direction[] directions;
     private int idQte;
 
@@ -43,15 +45,19 @@ public class QTE : MonoBehaviour
             {
                 case 0:
                     directions[i] = Direction.Up;
+                    circlePos[i].GetComponent<SpriteRenderer>().sprite = arrows[0];
                     break;
                 case 1:
                     directions[i] = Direction.Left;
+                    circlePos[i].GetComponent<SpriteRenderer>().sprite = arrows[1];
                     break;
                 case 2:
                     directions[i] = Direction.Right;
+                    circlePos[i].GetComponent<SpriteRenderer>().sprite = arrows[2];
                     break;
                 case 3:
                     directions[i] = Direction.Down;
+                    circlePos[i].GetComponent<SpriteRenderer>().sprite = arrows[3];
                     break;
                 default:
                     break;
