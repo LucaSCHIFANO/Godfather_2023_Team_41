@@ -1085,9 +1085,9 @@ MonoBehaviour:
   scoreManager: {fileID: 11400000, guid: 169058e83c00ade46aef50ca755fe185, type: 2}
   balloon: {fileID: 7114263045835612583}
   slider: {fileID: 6061306743741078409}
-  maxBallonGauge: 10
+  maxBallonGauge: 15
   increaseBallonGauge: 2
-  decreaseBallonGaugeOverTime: 1
+  decreaseBallonGaugeOverTime: 3
   balloonSizeLimits: {x: 1, y: 4}
 --- !u!65 &3254546186022462348
 BoxCollider:
