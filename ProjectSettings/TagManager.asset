@@ -8,6 +8,8 @@ TagManager:
   - ModuleGenerator
   - LoadingPos
   - PuzzleActivation
+  - MusicSource
+  - SfxSource
   layers:
   - Default
   - TransparentFX

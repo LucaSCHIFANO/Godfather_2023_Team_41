@@ -8,16 +8,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
-    private void Death()
-    {
-
+        AudioManager._instance.PlaySfxSound(AudioManager._instance._startGameSfx);
     }
 }
