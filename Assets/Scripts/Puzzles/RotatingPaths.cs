@@ -30,13 +30,13 @@ public class RotatingPaths : MonoBehaviour
           
         if (value < 0)
         {
-            wheel1.transform.Rotate(0, -value * speed, 0);
-            wheel2.transform.Rotate(0, value * speed, 0);
+            wheel1.transform.Rotate(0, -value * speed * Time.deltaTime, 0);
+            wheel2.transform.Rotate(0, value * speed * Time.deltaTime, 0);
         }
         else if(value > 0)
         {
-            wheel1.transform.Rotate(0, -value * speed, 0);
-            wheel2.transform.Rotate(0, value * speed, 0);
+            wheel1.transform.Rotate(0, -value * speed * Time.deltaTime, 0);
+            wheel2.transform.Rotate(0, value * speed * Time.deltaTime, 0);
         }
     }
 
