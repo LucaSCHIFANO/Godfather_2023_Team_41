@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private BoxCollider _playerBoxCollider;
     [SerializeField] private PlayerCollision _collision;
+    public static PlayerMovement _instance;
 
     [Space]
     [Header("Checks")]
@@ -19,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [Space]
     [Header("Speed Values")]
     [SerializeField] private float _speed = 1f;
-    [SerializeField] private float _speedModifier = 1f;
+    public float _speedModifier = 1f;
     [SerializeField] private float _slowModifier = 1f;
     [SerializeField] private float _minSpeed = 1f;
     [SerializeField] private float _maxSpeed = 1f;
@@ -30,6 +31,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+
         _rigidBody = GetComponent<Rigidbody>();
         _collision = GetComponent<PlayerCollision>();
         _playerBoxCollider = GetComponent<BoxCollider>();
