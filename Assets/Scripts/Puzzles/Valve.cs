@@ -62,7 +62,7 @@ public class Valve : MonoBehaviour
 
     bool CheckAngle(GameObject wheel)
     {
-        Debug.Log(wheel.transform.eulerAngles.z + " " + wheelref.transform.eulerAngles.z);
+        //Debug.Log(wheel.transform.eulerAngles.z + " " + wheelref.transform.eulerAngles.z);
         if (wheel.transform.eulerAngles.z > wheelref.transform.eulerAngles.z - tolerance && wheel.transform.eulerAngles.z < wheelref.transform.eulerAngles.z + tolerance) return true;
         return false;
     }
