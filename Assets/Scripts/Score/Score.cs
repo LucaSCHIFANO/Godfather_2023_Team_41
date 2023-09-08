@@ -28,7 +28,7 @@ public class Score : MonoBehaviour
 
     void ActualizeScore()
     {
-        scoreText.text = $"Score : {currentScore.ToString("00000")}";
+        scoreText.text = $"Score: {currentScore.ToString("00000")}";
     }
 
     public int GetCurrentScore()

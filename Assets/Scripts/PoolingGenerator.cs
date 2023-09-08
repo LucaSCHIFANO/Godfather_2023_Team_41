@@ -22,7 +22,14 @@ public class PoolingGenerator : MonoBehaviour
 
         for (int i = 0; i < _moduleList.Count; i++)
         {
-            actualModule = _moduleList[Random.Range(0, _moduleList.Count)];
+            if (i == 0)
+            {
+                actualModule = _moduleList[0];
+            }
+            else
+            {
+                actualModule = _moduleList[Random.Range(0, _moduleList.Count)];
+            }
 
             GameObject moduleCharged = Instantiate(actualModule);
 
