@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip _playerDeathSfx;
     public AudioClip _balloonExplosionSfx;
     public AudioClip _doorOpeningSfx;
+    public AudioClip _baloonGaugingSfx;
 
     [Space]
     [Header("References")]

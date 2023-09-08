@@ -47,8 +47,9 @@ public class Balloon : MonoBehaviour
     {
         if (!context.started || !isActivated) return;
         currentBallonGauge += increaseBallonGauge;
+        AudioManager._instance.PlaySfxSound(AudioManager._instance._baloonGaugingSfx);
 
-        if(currentBallonGauge >= maxBallonGauge)
+        if (currentBallonGauge >= maxBallonGauge)
         {
             AudioManager._instance.PlaySfxSound(AudioManager._instance._balloonExplosionSfx);
             scoreManager.Instance.AddScore(100);

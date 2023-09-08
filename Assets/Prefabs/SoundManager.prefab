@@ -310,6 +310,7 @@ MonoBehaviour:
   _playerDeathSfx: {fileID: 8300000, guid: d083dbbb28aa05a439b60961d10a185a, type: 3}
   _balloonExplosionSfx: {fileID: 8300000, guid: c9cb8b2df063a104abb6563c37cf603b, type: 3}
   _doorOpeningSfx: {fileID: 8300000, guid: 4a75cd1858f5ff24ca2403f6aa5e3ba7, type: 3}
+  _baloonGaugingSfx: {fileID: 8300000, guid: 02d2b8613445e674fafc11c8972b2cfb, type: 3}
   _musicSourceObject: {fileID: 1172811495311740161}
   _sfxSrouceObject: {fileID: 2593052991268615396}
   _currentSceneIndex: 0
