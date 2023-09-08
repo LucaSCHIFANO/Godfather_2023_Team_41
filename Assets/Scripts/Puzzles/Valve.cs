@@ -62,7 +62,6 @@ public class Valve : MonoBehaviour
 
     bool CheckAngle(GameObject wheel)
     {
-        //Debug.Log(wheel.transform.eulerAngles.z + " " + wheelref.transform.eulerAngles.z);
         if (wheel.transform.eulerAngles.z > wheelref.transform.eulerAngles.z - tolerance && wheel.transform.eulerAngles.z < wheelref.transform.eulerAngles.z + tolerance) return true;
         return false;
     }
@@ -71,6 +70,7 @@ public class Valve : MonoBehaviour
     {
         door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed, 0);
         scoreManager.Instance.AddScore(100);
+        Time.timeScale = 1;
     }
 
 
