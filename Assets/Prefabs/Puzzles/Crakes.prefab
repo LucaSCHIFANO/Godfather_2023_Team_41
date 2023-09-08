@@ -173,11 +173,35 @@ MonoBehaviour:
     m_ActionId: ab4b9eed-e8e5-4e98-b27b-7e809cb471be
     m_ActionName: BorneInput/Crank[/Mouse/delta/left,/Mouse/delta/right]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562149660332718899}
+        m_TargetAssemblyTypeName: Crakes, Assembly-CSharp
+        m_MethodName: LeverLeftInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 8d897c0e-89c5-4f54-8b79-c2fcb03c2d36
     m_ActionName: BorneInput/Lever Left[/Keyboard/v,/Keyboard/j]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562149660332718899}
+        m_TargetAssemblyTypeName: Crakes, Assembly-CSharp
+        m_MethodName: LeverRightInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 3807bb12-bfe8-482f-b0e5-23bb5afd1e0a
     m_ActionName: BorneInput/Lever Right[/Keyboard/6,/Keyboard/l]
   - m_PersistentCalls:
@@ -206,7 +230,7 @@ MonoBehaviour:
     m_ActionName: BorneInput/BlackButton[/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Main Inputs
+  m_DefaultActionMap: BorneInput
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &1562149660332718899

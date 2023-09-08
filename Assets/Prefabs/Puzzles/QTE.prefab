@@ -759,19 +759,67 @@ MonoBehaviour:
     m_ActionId: 3807bb12-bfe8-482f-b0e5-23bb5afd1e0a
     m_ActionName: BorneInput/Lever Right[/Keyboard/6,/Keyboard/l]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5721910413725732899}
+        m_TargetAssemblyTypeName: QTE, Assembly-CSharp
+        m_MethodName: UpInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d6eb6179-decf-466b-aaaa-a979aadf3fea
     m_ActionName: BorneInput/UpArrowButton[/Keyboard/q]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5721910413725732899}
+        m_TargetAssemblyTypeName: QTE, Assembly-CSharp
+        m_MethodName: DownInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 49c7533a-4906-4783-9b4d-5de4bb5a320d
     m_ActionName: BorneInput/DownArrowButton[/Keyboard/s]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5721910413725732899}
+        m_TargetAssemblyTypeName: QTE, Assembly-CSharp
+        m_MethodName: RightInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 2cd4ac3b-b16e-430e-b468-cbefb267bf7a
     m_ActionName: BorneInput/RightArrowButton[/Keyboard/r]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5721910413725732899}
+        m_TargetAssemblyTypeName: QTE, Assembly-CSharp
+        m_MethodName: LeftInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: a3feae8b-86f5-416a-a993-e0b67f472ee9
     m_ActionName: BorneInput/LeftArrowButton[/Keyboard/f]
   - m_PersistentCalls:
@@ -784,7 +832,7 @@ MonoBehaviour:
     m_ActionName: BorneInput/BlackButton[/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Main Inputs
+  m_DefaultActionMap: BorneInput
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &5721910413725732899

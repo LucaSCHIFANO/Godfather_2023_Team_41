@@ -1083,7 +1083,19 @@ MonoBehaviour:
     m_ActionId: a8bfa4ad-cb04-4e99-a57d-00c015a5e63c
     m_ActionName: Main Inputs/BlackButton[/Keyboard/e]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3248778246621986814}
+        m_TargetAssemblyTypeName: Valve, Assembly-CSharp
+        m_MethodName: MovementInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: ab4b9eed-e8e5-4e98-b27b-7e809cb471be
     m_ActionName: BorneInput/Crank[/Mouse/delta/left,/Mouse/delta/right]
   - m_PersistentCalls:
@@ -1115,12 +1127,24 @@ MonoBehaviour:
     m_ActionId: be3e717e-b3c1-4aaa-a2d2-00770ceda6f5
     m_ActionName: BorneInput/WhiteButton[/Keyboard/g]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3248778246621986814}
+        m_TargetAssemblyTypeName: Valve, Assembly-CSharp
+        m_MethodName: LeverLeftInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: fcd0a4cf-c8ec-4c71-8589-a87b51ce48ec
     m_ActionName: BorneInput/BlackButton[/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Main Inputs
+  m_DefaultActionMap: BorneInput
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &3248778246621986814
@@ -1139,9 +1163,9 @@ MonoBehaviour:
   wheel2: {fileID: 6682721931188349767}
   wheel3: {fileID: 7745872208307418238}
   wheelref: {fileID: 349315716341877994}
-  speed: 10
+  speed: 8
   randomStartPosition: {x: 20, y: 80}
-  tolerance: 8
+  tolerance: 10
   door: {fileID: 4931763054039768852}
   doorSpeed: 10
 --- !u!65 &882133834315753077

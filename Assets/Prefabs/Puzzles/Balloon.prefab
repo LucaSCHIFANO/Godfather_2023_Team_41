@@ -568,7 +568,19 @@ MonoBehaviour:
     m_ActionId: a3feae8b-86f5-416a-a993-e0b67f472ee9
     m_ActionName: BorneInput/LeftArrowButton[/Keyboard/f]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8431006219060260344}
+        m_TargetAssemblyTypeName: Balloon, Assembly-CSharp
+        m_MethodName: PumpInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: be3e717e-b3c1-4aaa-a2d2-00770ceda6f5
     m_ActionName: BorneInput/WhiteButton[/Keyboard/g]
   - m_PersistentCalls:
@@ -577,7 +589,7 @@ MonoBehaviour:
     m_ActionName: BorneInput/BlackButton[/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Main Inputs
+  m_DefaultActionMap: BorneInput
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &8431006219060260344
