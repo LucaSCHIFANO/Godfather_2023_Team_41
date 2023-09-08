@@ -630,6 +630,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5ba5f7af9c6895649b0daa300429f61b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c8bdffe7d105f49499b5093ed82038a4, type: 2}
     - target: {fileID: 919132149155446097, guid: 5ba5f7af9c6895649b0daa300429f61b, type: 3}
       propertyPath: m_Name
       value: Engrenage_05 (10)
@@ -930,6 +934,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ec97edd78f13d474d808660f31a61323, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4a355b98b8c735478ea3e2e77dddd78, type: 2}
     - target: {fileID: 919132149155446097, guid: ec97edd78f13d474d808660f31a61323, type: 3}
       propertyPath: m_Name
       value: Tuyaux_04
@@ -1004,6 +1012,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 84cf086037ceb1a43a643ecb91b0d9b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4a355b98b8c735478ea3e2e77dddd78, type: 2}
     - target: {fileID: 919132149155446097, guid: 84cf086037ceb1a43a643ecb91b0d9b6, type: 3}
       propertyPath: m_Name
       value: Engrenage_01
@@ -1190,6 +1202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: bea65d3a419f2494b92904b64201fb92, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4eaf554281b7377409263931e9ce745d, type: 2}
     - target: {fileID: 919132149155446097, guid: bea65d3a419f2494b92904b64201fb92, type: 3}
       propertyPath: m_Name
       value: Tuyaux_V2_04
@@ -1252,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b13474754a171445946a42fc0f506c9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4eaf554281b7377409263931e9ce745d, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b13474754a171445946a42fc0f506c9, type: 3}
       propertyPath: m_Name
       value: Tuyaux_V2_03 (1)
@@ -1326,6 +1346,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: aef277e9b8b56104d83aa1b436beda3f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4a355b98b8c735478ea3e2e77dddd78, type: 2}
     - target: {fileID: 919132149155446097, guid: aef277e9b8b56104d83aa1b436beda3f, type: 3}
       propertyPath: m_Name
       value: Tuyaux_02
@@ -1392,6 +1416,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b13474754a171445946a42fc0f506c9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4eaf554281b7377409263931e9ce745d, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b13474754a171445946a42fc0f506c9, type: 3}
       propertyPath: m_Name
       value: Tuyaux_V2_03
@@ -1466,6 +1494,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fedd368d81927fe47922885a91d0dd39, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4eaf554281b7377409263931e9ce745d, type: 2}
     - target: {fileID: 919132149155446097, guid: fedd368d81927fe47922885a91d0dd39, type: 3}
       propertyPath: m_Name
       value: Chaines_01 (1)
@@ -1602,6 +1634,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fedd368d81927fe47922885a91d0dd39, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4eaf554281b7377409263931e9ce745d, type: 2}
     - target: {fileID: 919132149155446097, guid: fedd368d81927fe47922885a91d0dd39, type: 3}
       propertyPath: m_Name
       value: Chaines_01
@@ -1680,6 +1716,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5ba5f7af9c6895649b0daa300429f61b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4a355b98b8c735478ea3e2e77dddd78, type: 2}
     - target: {fileID: 919132149155446097, guid: 5ba5f7af9c6895649b0daa300429f61b, type: 3}
       propertyPath: m_Name
       value: Engrenage_05 (7)
@@ -1948,6 +1988,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fedd368d81927fe47922885a91d0dd39, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4eaf554281b7377409263931e9ce745d, type: 2}
     - target: {fileID: 919132149155446097, guid: fedd368d81927fe47922885a91d0dd39, type: 3}
       propertyPath: m_Name
       value: Chaines_01 (2)
@@ -2096,6 +2140,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: aef277e9b8b56104d83aa1b436beda3f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4a355b98b8c735478ea3e2e77dddd78, type: 2}
     - target: {fileID: 919132149155446097, guid: aef277e9b8b56104d83aa1b436beda3f, type: 3}
       propertyPath: m_Name
       value: Tuyaux_02 (1)
