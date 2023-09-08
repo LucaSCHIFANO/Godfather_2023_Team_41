@@ -13,6 +13,7 @@ TagManager:
   - DeathCanvas
   - BackgroundGenerator
   - ScoreCanvas
+  - BackImageGenerator
   layers:
   - Default
   - TransparentFX
