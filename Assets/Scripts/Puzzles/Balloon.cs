@@ -23,6 +23,8 @@ public class Balloon : MonoBehaviour
 
     [Header("BallonSize")]
     [SerializeField] Vector2 balloonSizeLimits;
+    [SerializeField] GameObject toSpawn;
+
 
     private bool isActivated;
 
@@ -49,6 +51,8 @@ public class Balloon : MonoBehaviour
         if(currentBallonGauge >= maxBallonGauge)
         {
             scoreManager.Instance.AddScore(100);
+            var spawn = Instantiate(toSpawn, transform.position, transform.rotation);
+            Destroy(spawn, 10);
             Destroy(gameObject);
         }
     }
