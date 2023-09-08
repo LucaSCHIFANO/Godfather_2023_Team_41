@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ModuleObject : MonoBehaviour
+public class ObjectPool : MonoBehaviour
 {
     PoolingGenerator generator;
     GameObject player;
