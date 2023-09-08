@@ -44,8 +44,8 @@ public class MainMenu : MonoBehaviour
 
     public void Quit()
     {
-        if(Application.isEditor) EditorApplication.isPlaying = false;
-        else Application.Quit();
+       /* if(Application.isEditor) EditorApplication.isPlaying = false;
+        else */Application.Quit();
     }
 
     public void ChangeTuto()
