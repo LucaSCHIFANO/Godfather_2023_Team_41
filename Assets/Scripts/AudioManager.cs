@@ -20,6 +20,8 @@ public class AudioManager : MonoBehaviour
     [Header("SFX Clips")]
     public AudioClip _startGameSfx;
     public AudioClip _playerDeathSfx;
+    public AudioClip _balloonExplosionSfx;
+    public AudioClip _doorOpeningSfx;
 
     [Space]
     [Header("References")]

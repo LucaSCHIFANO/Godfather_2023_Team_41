@@ -92,6 +92,7 @@ public class QTE : MonoBehaviour
 
     void MoveDoor()
     {
+        AudioManager._instance.PlaySfxSound(AudioManager._instance._doorOpeningSfx);
         door.GetComponent<Rigidbody>().velocity = new Vector3(0, doorSpeed, 0);
         scoreManager.Instance.AddScore(100);
     }

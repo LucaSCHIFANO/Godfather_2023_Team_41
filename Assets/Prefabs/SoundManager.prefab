@@ -308,6 +308,8 @@ MonoBehaviour:
   _gameplayMusic: {fileID: 8300000, guid: e2300c806ad83c1499f888f8b0f18456, type: 3}
   _startGameSfx: {fileID: 8300000, guid: 0659d0a6c253f9b4bbdb7e8d8e99c792, type: 3}
   _playerDeathSfx: {fileID: 8300000, guid: d083dbbb28aa05a439b60961d10a185a, type: 3}
+  _balloonExplosionSfx: {fileID: 8300000, guid: c9cb8b2df063a104abb6563c37cf603b, type: 3}
+  _doorOpeningSfx: {fileID: 8300000, guid: 4a75cd1858f5ff24ca2403f6aa5e3ba7, type: 3}
   _musicSourceObject: {fileID: 1172811495311740161}
   _sfxSrouceObject: {fileID: 2593052991268615396}
   _currentSceneIndex: 0

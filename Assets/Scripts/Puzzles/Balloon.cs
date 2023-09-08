@@ -50,6 +50,7 @@ public class Balloon : MonoBehaviour
 
         if(currentBallonGauge >= maxBallonGauge)
         {
+            AudioManager._instance.PlaySfxSound(AudioManager._instance._balloonExplosionSfx);
             scoreManager.Instance.AddScore(100);
             var spawn = Instantiate(toSpawn, transform.position, transform.rotation);
             Destroy(spawn, 10);
