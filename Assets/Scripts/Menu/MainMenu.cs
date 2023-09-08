@@ -9,6 +9,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject howToPlay;
 
+    [SerializeField] private GameObject tuto_1;
+    [SerializeField] private GameObject tuto_2;
+    private bool isTuto2;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -42,5 +46,21 @@ public class MainMenu : MonoBehaviour
     {
         if(Application.isEditor) EditorApplication.isPlaying = false;
         else Application.Quit();
+    }
+
+    public void ChangeTuto()
+    {
+        if (isTuto2)
+        {
+            tuto_1.SetActive(true);
+            tuto_2.SetActive(false);
+            isTuto2 = false;
+        }
+        else
+        {
+            tuto_1.SetActive(false);
+            tuto_2.SetActive(true);
+            isTuto2 = true;
+        }
     }
 }
