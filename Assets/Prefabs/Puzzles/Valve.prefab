@@ -1144,7 +1144,7 @@ MonoBehaviour:
     m_ActionName: BorneInput/BlackButton[/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: BorneInput
+  m_DefaultActionMap: Main Inputs
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &3248778246621986814

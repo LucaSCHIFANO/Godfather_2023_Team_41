@@ -832,7 +832,7 @@ MonoBehaviour:
     m_ActionName: BorneInput/BlackButton[/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: BorneInput
+  m_DefaultActionMap: a702d646-794e-4693-90d2-f4279ad760ca
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &5721910413725732899
