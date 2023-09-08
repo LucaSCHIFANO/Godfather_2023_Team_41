@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BackgroundPool : MonoBehaviour
 {
-    PoolingGenerator generator;
+    BackgroundGenerator generator;
     GameObject player;
 
     void Start()
     {
-        generator = GameObject.FindGameObjectWithTag("ModuleGenerator").GetComponent<PoolingGenerator>();
+        generator = GameObject.FindGameObjectWithTag("BackgroundGenerator").GetComponent<BackgroundGenerator>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 

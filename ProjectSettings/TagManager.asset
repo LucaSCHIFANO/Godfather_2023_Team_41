@@ -11,6 +11,8 @@ TagManager:
   - MusicSource
   - SfxSource
   - DeathCanvas
+  - BackgroundGenerator
+  - ScoreCanvas
   layers:
   - Default
   - TransparentFX

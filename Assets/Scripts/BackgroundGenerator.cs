@@ -32,7 +32,7 @@ public class BackgroundGenerator : MonoBehaviour
             moduleCharged.transform.position = _loadingPosition.position;
             _loadingPosition.transform.position = _loadingPosition.transform.position + new Vector3(190f, 0, 0);
             BackgroundPooler.instance.modulePrefab.Add(moduleCharged);
-            moduleCharged.AddComponent<ModuleObject>();
+            moduleCharged.AddComponent<BackgroundPool>();
 
         }
     }

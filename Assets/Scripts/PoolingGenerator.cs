@@ -29,7 +29,7 @@ public class PoolingGenerator : MonoBehaviour
             moduleCharged.transform.position = loadingPosition.position;
             loadingPosition.transform.position += new Vector3(_moduleGapDistance, 0, 0);
 
-            moduleCharged.AddComponent<ModuleObject>();
+            moduleCharged.AddComponent<ObjectPool>();
         }
     }
 
